@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Wild West';
+    src: url('path/to/your/WildWest.ttf') format('truetype'); /* Pfad zur Schriftart anpassen */
+}
+
+:root {
+    --chat-align: row;
+    --message-gap-bottom: 20px;
+    --name-background-color: #8b0000; /* Dunkelrot für Namen */
+    --message-background-color: #deb887; /* Hellbraun für Nachrichtenhintergrund */
+    --badge-size: 15px;
+    --badge-spacing: 2px;
+    --emote-size: 16px;
+    --emote-only-size: 32px;
+    --font-color: #3c3a2d;
+    --font-size: 16px;
+    --font-family: 'Wild West', cursive;
+    --time-size: 12px;
+    --time-align: right;
+    --animate-duration: 3s;
+    --animate-delay: 0;
+}s
+
+#chat {
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+#chat li {
+    background-color: transparent;
+    margin-bottom: 15px !important; /* Abstand zwischen den Nachrichten */
+}
+.msg {
+    display: flex;
+    margin-bottom: var(--message-gap-bottom);
+    flex-direction: var(--chat-align);
+}
+
+.badges img {
+    width: var(--badge-size);
+    margin-left: var(--badge-spacing);
+}
+.message div {
+    padding: 6px;
+    position: relative;
+}
+
+.message .emote {
+    height: var(--emote-size);
+}
+
+.emoteonly .message .emote {
+    height: var(--emote-only-size);
+}
+
+.content {
+    background-color: var(--message-background-color);
+    border-radius: 5px;
+    left: 15px;
+    margin-right: 15px;
+}
+
+.time {
+    font-size: var(--time-size);
+    margin-top: -6px;
+    right: 0px;
+    padding: 0 !important;
+    text-align: right;
+}
+
+.broadcaster {}
+
+.subscriber {}
+
+.reply {}
+
+.reward {}
+
+.highlight {}
+
+.me {}
+
+
+.message-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: calc(var(--message-gap-bottom) + 55px);
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  max-width: 100%:
+  word-wrap: break-word;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  --s: 1.8em; /* the ribbon size */
+  --d: .8em;  /* the depth */
+  --c: .8em;  /* the cutout part */
+  
+  padding: 0 calc(var(--s) + .5em) var(--d);
+  line-height: 1.8;
+  background:
+    conic-gradient(at left  var(--s) bottom var(--d),
+     #0000 25%,#0008 0 37.5%,#0004 0) 0   /50% 100% no-repeat,
+    conic-gradient(at right var(--s) bottom var(--d),
+     #0004 62.5%,#0008 0 75%,#0000 0) 100%/50% 100% no-repeat;
+  clip-path: polygon(0 var(--d), var(--s) var(--d),var(--s) 0,calc(100% - var(--s)) 0,calc(100% - var(--s)) var(--d),100% var(--d),calc(100% - var(--c)) calc(50% + var(--d)/2),100% 100%,calc(100% - var(--s) - var(--d)) 100%,calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) 100%,0 100%,var(--c) calc(50% + var(--d)/2));
+  background-color: #CC333F; /* the main color */
+  width: fit-content;
+  position: relative;
+  z-index: 1; /* Ensures the ribbon is above the rounded box */
+}
+
+.message {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  padding: 35px;  /* Padding hinzugefügt, um den Text vom Rand einzurücken */
+  position: absolute;
+  top: 50%; /* Justiere dies nach Bedarf */
+  left: 50%;
+  transform: translate(-50%, 5%);
+  width: 300px;  /* Breite bleibt fixiert */
+  height: auto;  /* Höhe passt sich dem Inhalt an */
+  background-color: #E5D7ED;
+  border-radius: 25px;
+  z-index: 0;  /* Sicherstellen, dass die Box hinter dem Ribbon bleibt */
+  word-wrap: break-word; /* Erlaubt das Umbrechen von langen Wörtern */
+  text-align: center; /* Optional, um den Text zu zentrieren */
+}
+
+;
+}
+
