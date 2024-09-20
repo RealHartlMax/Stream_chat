@@ -35,7 +35,7 @@
 
 #chat li {
     background-color: transparent,;
-    margin-bottom: auto !important; /* Abstand zwischen den Nachrichten */
+    margin-bottom: 20 px !important; /* Abstand zwischen den Nachrichten */
 }
 .msg {
     display: flex;
