@@ -133,7 +133,7 @@
   transform: translate(-50%, 5%);
   width: 300px;  /* Breite bleibt fixiert */
   height: auto;  /* Höhe passt sich dem Inhalt an */
-  background-color: #E5D7ED;
+  background-color: rgba(229, 215, 237, 0.8); /* 0,8 = 80% Transparenz lässt sich bisschen mit rumspielen*/;
   border-radius: 25px;
   z-index: 0;  /* Sicherstellen, dass die Box hinter dem Ribbon bleibt */
   word-wrap: break-word; /* Erlaubt das Umbrechen von langen Wörtern */
